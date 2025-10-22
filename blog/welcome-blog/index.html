@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-astro-cid-ouamjn2i>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,360 +7,42 @@
     <meta name="description"
         content="An introduction to my blog where I share insights about software engineering, programming tutorials, and my journey as a Computer Engineer.">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <meta name="generator" content="Astro v5.14.8">
     <title>Welcome to My Blog - Blog</title>
-    <style>
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1e40af;
-            --text-primary: #1f2937;
-            --text-secondary: #6b7280;
-            --bg-white: #ffffff;
-            --bg-gray: #f9fafb;
-            --border: #e5e7eb;
-            --spacing-unit: 8px
-        }
-
-        [data-astro-cid-ouamjn2i] {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0
-        }
-
-        html {
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary)
-        }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            background: var(--bg-white)
-        }
-
-        .container[data-astro-cid-ouamjn2i] {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 calc(var(--spacing-unit) * 3)
-        }
-
-        .navbar[data-astro-cid-ouamjn2i] {
-            background: var(--bg-white);
-            border-bottom: 1px solid var(--border);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 1px 3px #0000000d
-        }
-
-        .navbar[data-astro-cid-ouamjn2i] .container[data-astro-cid-ouamjn2i] {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: calc(var(--spacing-unit) * 2);
-            padding-bottom: calc(var(--spacing-unit) * 2)
-        }
-
-        .logo[data-astro-cid-ouamjn2i] {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-            transition: color .2s
-        }
-
-        .logo[data-astro-cid-ouamjn2i]:hover {
-            color: var(--primary-dark)
-        }
-
-        .nav-links[data-astro-cid-ouamjn2i] {
-            display: flex;
-            list-style: none;
-            gap: calc(var(--spacing-unit) * 4)
-        }
-
-        .nav-links[data-astro-cid-ouamjn2i] a[data-astro-cid-ouamjn2i] {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color .2s;
-            position: relative
-        }
-
-        .nav-links[data-astro-cid-ouamjn2i] a[data-astro-cid-ouamjn2i]:hover,
-        .nav-links[data-astro-cid-ouamjn2i] a[data-astro-cid-ouamjn2i].active {
-            color: var(--primary)
-        }
-
-        .nav-links[data-astro-cid-ouamjn2i] a[data-astro-cid-ouamjn2i].active:after {
-            content: "";
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--primary)
-        }
-
-        main[data-astro-cid-ouamjn2i] {
-            flex: 1;
-            padding: calc(var(--spacing-unit) * 6) 0
-        }
-
-        footer[data-astro-cid-ouamjn2i] {
-            background: var(--bg-gray);
-            border-top: 1px solid var(--border);
-            padding: calc(var(--spacing-unit) * 4) 0;
-            margin-top: calc(var(--spacing-unit) * 8)
-        }
-
-        footer[data-astro-cid-ouamjn2i] p[data-astro-cid-ouamjn2i] {
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: .9rem
-        }
-
-        @media(max-width:768px) {
-            .navbar[data-astro-cid-ouamjn2i] .container[data-astro-cid-ouamjn2i] {
-                flex-direction: column;
-                gap: calc(var(--spacing-unit) * 2)
-            }
-
-            .nav-links[data-astro-cid-ouamjn2i] {
-                gap: calc(var(--spacing-unit) * 3);
-                font-size: .9rem
-            }
-
-            main[data-astro-cid-ouamjn2i] {
-                padding: calc(var(--spacing-unit) * 4) 0
-            }
-        }
-
-        .blog-post[data-astro-cid-4sn4zg3r] {
-            min-height: 60vh
-        }
-
-        .post-header[data-astro-cid-4sn4zg3r] {
-            max-width: 800px;
-            margin: 0 auto calc(var(--spacing-unit) * 6)
-        }
-
-        .cover-image[data-astro-cid-4sn4zg3r] {
-            width: 100%;
-            height: 400px;
-            overflow: hidden;
-            border-radius: 8px;
-            margin-bottom: calc(var(--spacing-unit) * 4)
-        }
-
-        .cover-image[data-astro-cid-4sn4zg3r] img[data-astro-cid-4sn4zg3r] {
-            width: 100%;
-            height: 100%;
-            object-fit: cover
-        }
-
-        .post-meta[data-astro-cid-4sn4zg3r] {
-            display: flex;
-            align-items: center;
-            gap: calc(var(--spacing-unit) * 3);
-            margin-bottom: calc(var(--spacing-unit) * 3);
-            flex-wrap: wrap
-        }
-
-        .post-meta[data-astro-cid-4sn4zg3r] time[data-astro-cid-4sn4zg3r] {
-            font-size: .95rem;
-            color: var(--primary);
-            font-weight: 500
-        }
-
-        .tags[data-astro-cid-4sn4zg3r] {
-            display: flex;
-            flex-wrap: wrap;
-            gap: calc(var(--spacing-unit) * 1)
-        }
-
-        .tag[data-astro-cid-4sn4zg3r] {
-            background: var(--bg-gray);
-            color: var(--text-primary);
-            padding: calc(var(--spacing-unit) * .5) calc(var(--spacing-unit) * 1.5);
-            border-radius: 4px;
-            font-size: .8rem;
-            font-weight: 500;
-            border: 1px solid var(--border)
-        }
-
-        .post-header[data-astro-cid-4sn4zg3r] h1[data-astro-cid-4sn4zg3r] {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: calc(var(--spacing-unit) * 3);
-            line-height: 1.2
-        }
-
-        .excerpt[data-astro-cid-4sn4zg3r] {
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            line-height: 1.6
-        }
-
-        .post-content[data-astro-cid-4sn4zg3r] {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.125rem;
-            line-height: 1.8;
-            color: var(--text-primary)
-        }
-
-        .post-content[data-astro-cid-4sn4zg3r] h2 {
-            font-size: 1.875rem;
-            font-weight: 700;
-            margin-top: calc(var(--spacing-unit) * 6);
-            margin-bottom: calc(var(--spacing-unit) * 3);
-            color: var(--text-primary)
-        }
-
-        .post-content[data-astro-cid-4sn4zg3r] h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-top: calc(var(--spacing-unit) * 5);
-            margin-bottom: calc(var(--spacing-unit) * 2.5);
-            color: var(--text-primary)
-        }
-
-        .post-content[data-astro-cid-4sn4zg3r] p {
-            margin-bottom: calc(var(--spacing-unit) * 3)
-        }
-
-        .post-content[data-astro-cid-4sn4zg3r] ul,
-        .post-content[data-astro-cid-4sn4zg3r] ol {
-            margin-bottom: calc(var(--spacing-unit) * 3);
-            padding-left: calc(var(--spacing-unit) * 4)
-        }
-
-        .post-content[data-astro-cid-4sn4zg3r] li {
-            margin-bottom: calc(var(--spacing-unit) * 1.5)
-        }
-
-        .post-content[data-astro-cid-4sn4zg3r] code {
-            background: var(--bg-gray);
-            padding: calc(var(--spacing-unit) * .5) calc(var(--spacing-unit) * 1);
-            border-radius: 4px;
-            font-family: Courier New, monospace;
-            font-size: .9em
-        }
-
-        .post-content[data-astro-cid-4sn4zg3r] pre {
-            background: var(--bg-gray);
-            padding: calc(var(--spacing-unit) * 3);
-            border-radius: 8px;
-            overflow-x: auto;
-            margin-bottom: calc(var(--spacing-unit) * 3);
-            border: 1px solid var(--border)
-        }
-
-        .post-content[data-astro-cid-4sn4zg3r] pre code {
-            background: none;
-            padding: 0
-        }
-
-        .post-content[data-astro-cid-4sn4zg3r] blockquote {
-            border-left: 4px solid var(--primary);
-            padding-left: calc(var(--spacing-unit) * 3);
-            margin: calc(var(--spacing-unit) * 4) 0;
-            color: var(--text-secondary);
-            font-style: italic
-        }
-
-        .post-content[data-astro-cid-4sn4zg3r] a {
-            color: var(--primary);
-            text-decoration: underline;
-            transition: color .2s
-        }
-
-        .post-content[data-astro-cid-4sn4zg3r] a:hover {
-            color: var(--primary-dark)
-        }
-
-        .post-footer[data-astro-cid-4sn4zg3r] {
-            max-width: 800px;
-            margin: calc(var(--spacing-unit) * 8) auto 0;
-            padding-top: calc(var(--spacing-unit) * 4);
-            border-top: 2px solid var(--border)
-        }
-
-        .back-link[data-astro-cid-4sn4zg3r] {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color .2s;
-            display: inline-block
-        }
-
-        .back-link[data-astro-cid-4sn4zg3r]:hover {
-            color: var(--primary-dark)
-        }
-
-        @media(max-width:768px) {
-            .cover-image[data-astro-cid-4sn4zg3r] {
-                height: 250px
-            }
-
-            .post-header[data-astro-cid-4sn4zg3r] h1[data-astro-cid-4sn4zg3r] {
-                font-size: 2rem
-            }
-
-            .excerpt[data-astro-cid-4sn4zg3r] {
-                font-size: 1.125rem
-            }
-
-            .post-content[data-astro-cid-4sn4zg3r] {
-                font-size: 1rem
-            }
-
-            .post-content[data-astro-cid-4sn4zg3r] h2 {
-                font-size: 1.5rem
-            }
-
-            .post-content[data-astro-cid-4sn4zg3r] h3 {
-                font-size: 1.25rem
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../../style.css" />
+    
 </head>
 
-<body data-astro-cid-ouamjn2i>
-    <nav class="navbar" data-astro-cid-ouamjn2i>
-        <div class="container" data-astro-cid-ouamjn2i> <a href="/" class="logo" data-astro-cid-ouamjn2i>Portfolio</a>
-            <ul class="nav-links" data-astro-cid-ouamjn2i>
-                <li data-astro-cid-ouamjn2i><a href="/" class data-astro-cid-ouamjn2i>Home</a></li>
-                <li data-astro-cid-ouamjn2i><a href="/about" class data-astro-cid-ouamjn2i>About</a></li>
-                <li data-astro-cid-ouamjn2i><a href="/projects" class data-astro-cid-ouamjn2i>Projects</a></li>
-                <li data-astro-cid-ouamjn2i><a href="/blog" class="active" data-astro-cid-ouamjn2i>Blog</a></li>
+<body>
+    <nav class="navbar">
+        <div class="container"> <a href="/" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="/" class>Home</a></li>
+                <li><a href="/about" class>About</a></li>
+                <li><a href="/projects" class>Projects</a></li>
+                <li><a href="/blog" class="active">Blog</a></li>
             </ul>
         </div>
     </nav>
-    <main data-astro-cid-ouamjn2i>
-        <article class="blog-post" data-astro-cid-4sn4zg3r>
-            <div class="container" data-astro-cid-4sn4zg3r>
-                <div class="post-header" data-astro-cid-4sn4zg3r>
-                    <div class="cover-image" data-astro-cid-4sn4zg3r> <img
+    <main>
+        <article class="blog-post">
+            <div class="container">
+                <div class="post-header">
+                    <div class="cover-image"> <img
                             src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800"
-                            alt="Welcome to My Blog" data-astro-cid-4sn4zg3r> </div>
-                    <div class="post-meta" data-astro-cid-4sn4zg3r> <time datetime="2025-10-22T15:45:15.613323+00:00"
-                            data-astro-cid-4sn4zg3r> October 22, 2025 </time>
-                        <div class="tags" data-astro-cid-4sn4zg3r> <span class="tag"
-                                data-astro-cid-4sn4zg3r>introduction</span><span class="tag"
-                                data-astro-cid-4sn4zg3r>personal</span><span class="tag"
-                                data-astro-cid-4sn4zg3r>blogging</span> </div>
+                            alt="Welcome to My Blog"> </div>
+                    <div class="post-meta"> <time datetime="2025-10-22T15:45:15.613323+00:00"
+                        > October 22, 2025 </time>
+                        <div class="tags"> <span class="tag"
+                            >introduction</span><span class="tag"
+                            >personal</span><span class="tag"
+                            >blogging</span> </div>
                     </div>
-                    <h1 data-astro-cid-4sn4zg3r>Welcome to My Blog</h1>
-                    <p class="excerpt" data-astro-cid-4sn4zg3r>An introduction to my blog where I share insights about
+                    <h1>Welcome to My Blog</h1>
+                    <p class="excerpt">An introduction to my blog where I share insights about
                         software engineering, programming tutorials, and my journey as a Computer Engineer.</p>
                 </div>
-                <div class="post-content" data-astro-cid-4sn4zg3r>
-                    <div data-astro-cid-4sn4zg3r>
+                <div class="post-content">
+                    <div>
                         <p>Welcome to my personal blog! I'm excited to share my thoughts, experiences, and technical
                             knowledge with you.</p>
 
@@ -399,14 +81,14 @@
                             you have any questions or suggestions!</p>
                     </div>
                 </div>
-                <div class="post-footer" data-astro-cid-4sn4zg3r> <a href="/blog" class="back-link"
-                        data-astro-cid-4sn4zg3r>← Back to Blog</a> </div>
+                <div class="post-footer"> <a href="/blog" class="back-link"
+                    >← Back to Blog</a> </div>
             </div>
         </article>
     </main>
-    <footer data-astro-cid-ouamjn2i>
-        <div class="container" data-astro-cid-ouamjn2i>
-            <p data-astro-cid-ouamjn2i>&copy; 2025 Computer Engineer. All rights reserved.</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Computer Engineer. All rights reserved.</p>
         </div>
     </footer>
 </body>
