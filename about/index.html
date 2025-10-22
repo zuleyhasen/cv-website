@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" data-astro-cid-ouamjn2i>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Computer Engineer - Portfolio &#38; Blog">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content="Astro v5.14.8">
+    <title>About - Computer Engineer Portfolio</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-white: #ffffff;
+            --bg-gray: #f9fafb;
+            --border: #e5e7eb;
+            --spacing-unit: 8px
+        }
+
+        [data-astro-cid-ouamjn2i] {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary)
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-white)
+        }
+
+        .container[data-astro-cid-ouamjn2i] {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 calc(var(--spacing-unit) * 3)
+        }
+
+        .navbar[data-astro-cid-ouamjn2i] {
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px #0000000d
+        }
+
+        .navbar[data-astro-cid-ouamjn2i] .container[data-astro-cid-ouamjn2i] {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: calc(var(--spacing-unit) * 2);
+            padding-bottom: calc(var(--spacing-unit) * 2)
+        }
+
+        .logo[data-astro-cid-ouamjn2i] {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            transition: color .2s
+        }
+
+        .logo[data-astro-cid-ouamjn2i]:hover {
+            color: var(--primary-dark)
+        }
+
+        .nav-links[data-astro-cid-ouamjn2i] {
+            display: flex;
+            list-style: none;
+            gap: calc(var(--spacing-unit) * 4)
+        }
+
+        .nav-links[data-astro-cid-ouamjn2i] a[data-astro-cid-ouamjn2i] {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color .2s;
+            position: relative
+        }
+
+        .nav-links[data-astro-cid-ouamjn2i] a[data-astro-cid-ouamjn2i]:hover,
+        .nav-links[data-astro-cid-ouamjn2i] a[data-astro-cid-ouamjn2i].active {
+            color: var(--primary)
+        }
+
+        .nav-links[data-astro-cid-ouamjn2i] a[data-astro-cid-ouamjn2i].active:after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary)
+        }
+
+        main[data-astro-cid-ouamjn2i] {
+            flex: 1;
+            padding: calc(var(--spacing-unit) * 6) 0
+        }
+
+        footer[data-astro-cid-ouamjn2i] {
+            background: var(--bg-gray);
+            border-top: 1px solid var(--border);
+            padding: calc(var(--spacing-unit) * 4) 0;
+            margin-top: calc(var(--spacing-unit) * 8)
+        }
+
+        footer[data-astro-cid-ouamjn2i] p[data-astro-cid-ouamjn2i] {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: .9rem
+        }
+
+        @media(max-width:768px) {
+            .navbar[data-astro-cid-ouamjn2i] .container[data-astro-cid-ouamjn2i] {
+                flex-direction: column;
+                gap: calc(var(--spacing-unit) * 2)
+            }
+
+            .nav-links[data-astro-cid-ouamjn2i] {
+                gap: calc(var(--spacing-unit) * 3);
+                font-size: .9rem
+            }
+
+            main[data-astro-cid-ouamjn2i] {
+                padding: calc(var(--spacing-unit) * 4) 0
+            }
+        }
+
+        .about-container[data-astro-cid-kh7btl4r] {
+            min-height: 60vh
+        }
+
+        .about-header[data-astro-cid-kh7btl4r] {
+            text-align: center;
+            margin-bottom: calc(var(--spacing-unit) * 8)
+        }
+
+        .about-header[data-astro-cid-kh7btl4r] h1[data-astro-cid-kh7btl4r] {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: calc(var(--spacing-unit) * 2)
+        }
+
+        .subtitle[data-astro-cid-kh7btl4r] {
+            font-size: 1.25rem;
+            color: var(--primary);
+            font-weight: 500
+        }
+
+        .about-section[data-astro-cid-kh7btl4r] {
+            margin-bottom: calc(var(--spacing-unit) * 8)
+        }
+
+        .about-section[data-astro-cid-kh7btl4r] h2[data-astro-cid-kh7btl4r] {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: calc(var(--spacing-unit) * 3);
+            padding-bottom: calc(var(--spacing-unit) * 1.5);
+            border-bottom: 2px solid var(--primary);
+            display: inline-block
+        }
+
+        .about-section[data-astro-cid-kh7btl4r]>p[data-astro-cid-kh7btl4r] {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-width: 800px
+        }
+
+        .timeline-item[data-astro-cid-kh7btl4r] {
+            margin-bottom: calc(var(--spacing-unit) * 5);
+            padding-left: calc(var(--spacing-unit) * 3);
+            border-left: 3px solid var(--border)
+        }
+
+        .timeline-header[data-astro-cid-kh7btl4r] {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: calc(var(--spacing-unit) * 2);
+            margin-bottom: calc(var(--spacing-unit) * 1)
+        }
+
+        .timeline-item[data-astro-cid-kh7btl4r] h3[data-astro-cid-kh7btl4r] {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary)
+        }
+
+        .date[data-astro-cid-kh7btl4r] {
+            color: var(--primary);
+            font-weight: 500;
+            font-size: .95rem
+        }
+
+        .institution[data-astro-cid-kh7btl4r] {
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: calc(var(--spacing-unit) * 2)
+        }
+
+        .timeline-item[data-astro-cid-kh7btl4r] ul[data-astro-cid-kh7btl4r] {
+            margin-left: calc(var(--spacing-unit) * 3);
+            color: var(--text-secondary);
+            line-height: 1.8
+        }
+
+        .timeline-item[data-astro-cid-kh7btl4r] li[data-astro-cid-kh7btl4r] {
+            margin-bottom: calc(var(--spacing-unit) * 1)
+        }
+
+        .skills-grid[data-astro-cid-kh7btl4r] {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: calc(var(--spacing-unit) * 4)
+        }
+
+        .skill-category[data-astro-cid-kh7btl4r] h3[data-astro-cid-kh7btl4r] {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: calc(var(--spacing-unit) * 2)
+        }
+
+        .skill-tags[data-astro-cid-kh7btl4r] {
+            display: flex;
+            flex-wrap: wrap;
+            gap: calc(var(--spacing-unit) * 1.5)
+        }
+
+        .skill-tag[data-astro-cid-kh7btl4r] {
+            background: var(--bg-gray);
+            color: var(--text-primary);
+            padding: calc(var(--spacing-unit) * 1) calc(var(--spacing-unit) * 2);
+            border-radius: 6px;
+            font-size: .9rem;
+            font-weight: 500;
+            border: 1px solid var(--border);
+            transition: all .2s
+        }
+
+        .skill-tag[data-astro-cid-kh7btl4r]:hover {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+            transform: translateY(-2px)
+        }
+
+        .contact-info[data-astro-cid-kh7btl4r] {
+            background: var(--bg-gray);
+            padding: calc(var(--spacing-unit) * 4);
+            border-radius: 8px;
+            border: 1px solid var(--border)
+        }
+
+        .contact-info[data-astro-cid-kh7btl4r] p[data-astro-cid-kh7btl4r] {
+            color: var(--text-secondary);
+            margin-bottom: calc(var(--spacing-unit) * 3);
+            font-size: 1.125rem
+        }
+
+        .contact-links[data-astro-cid-kh7btl4r] {
+            display: flex;
+            gap: calc(var(--spacing-unit) * 3);
+            flex-wrap: wrap
+        }
+
+        .contact-link[data-astro-cid-kh7btl4r] {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color .2s;
+            font-size: 1.125rem
+        }
+
+        .contact-link[data-astro-cid-kh7btl4r]:hover {
+            color: var(--primary-dark);
+            text-decoration: underline
+        }
+
+        @media(max-width:768px) {
+            .about-header[data-astro-cid-kh7btl4r] h1[data-astro-cid-kh7btl4r] {
+                font-size: 2rem
+            }
+
+            .subtitle[data-astro-cid-kh7btl4r] {
+                font-size: 1.125rem
+            }
+
+            .about-section[data-astro-cid-kh7btl4r] h2[data-astro-cid-kh7btl4r] {
+                font-size: 1.5rem
+            }
+
+            .timeline-header[data-astro-cid-kh7btl4r] {
+                flex-direction: column;
+                gap: calc(var(--spacing-unit) * 1)
+            }
+
+            .skills-grid[data-astro-cid-kh7btl4r] {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body data-astro-cid-ouamjn2i>
+    <nav class="navbar" data-astro-cid-ouamjn2i>
+        <div class="container" data-astro-cid-ouamjn2i> <a href="/" class="logo" data-astro-cid-ouamjn2i>Portfolio</a>
+            <ul class="nav-links" data-astro-cid-ouamjn2i>
+                <li data-astro-cid-ouamjn2i><a href="/" class data-astro-cid-ouamjn2i>Home</a></li>
+                <li data-astro-cid-ouamjn2i><a href="/about" class data-astro-cid-ouamjn2i>About</a></li>
+                <li data-astro-cid-ouamjn2i><a href="/projects" class data-astro-cid-ouamjn2i>Projects</a></li>
+                <li data-astro-cid-ouamjn2i><a href="/blog" class data-astro-cid-ouamjn2i>Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main data-astro-cid-ouamjn2i>
+        <div class="about-container" data-astro-cid-kh7btl4r>
+            <div class="container" data-astro-cid-kh7btl4r>
+                <div class="about-header" data-astro-cid-kh7btl4r>
+                    <h1 data-astro-cid-kh7btl4r>About Me</h1>
+                    <p class="subtitle" data-astro-cid-kh7btl4r>Computer Engineer & Software Developer</p>
+                </div>
+                <section class="about-section" data-astro-cid-kh7btl4r>
+                    <h2 data-astro-cid-kh7btl4r>Professional Summary</h2>
+                    <p data-astro-cid-kh7btl4r>
+                        I am a passionate Computer Engineer with expertise in software development,
+                        system design, and modern web technologies. I love solving complex problems
+                        and building solutions that make a difference.
+                    </p>
+                </section>
+                <section class="about-section" data-astro-cid-kh7btl4r>
+                    <h2 data-astro-cid-kh7btl4r>Education</h2>
+                    <div class="timeline-item" data-astro-cid-kh7btl4r>
+                        <div class="timeline-header" data-astro-cid-kh7btl4r>
+                            <h3 data-astro-cid-kh7btl4r>Bachelor's/Master's Degree in Computer Engineering</h3> <span
+                                class="date" data-astro-cid-kh7btl4r>Year - Year</span>
+                        </div>
+                        <p class="institution" data-astro-cid-kh7btl4r>University Name</p>
+                        <p data-astro-cid-kh7btl4r>Relevant coursework and achievements.</p>
+                    </div>
+                </section>
+                <section class="about-section" data-astro-cid-kh7btl4r>
+                    <h2 data-astro-cid-kh7btl4r>Experience</h2>
+                    <div class="timeline-item" data-astro-cid-kh7btl4r>
+                        <div class="timeline-header" data-astro-cid-kh7btl4r>
+                            <h3 data-astro-cid-kh7btl4r>Position Title</h3> <span class="date"
+                                data-astro-cid-kh7btl4r>Year - Present</span>
+                        </div>
+                        <p class="institution" data-astro-cid-kh7btl4r>Company Name</p>
+                        <ul data-astro-cid-kh7btl4r>
+                            <li data-astro-cid-kh7btl4r>Key responsibility or achievement</li>
+                            <li data-astro-cid-kh7btl4r>Key responsibility or achievement</li>
+                            <li data-astro-cid-kh7btl4r>Key responsibility or achievement</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item" data-astro-cid-kh7btl4r>
+                        <div class="timeline-header" data-astro-cid-kh7btl4r>
+                            <h3 data-astro-cid-kh7btl4r>Previous Position</h3> <span class="date"
+                                data-astro-cid-kh7btl4r>Year - Year</span>
+                        </div>
+                        <p class="institution" data-astro-cid-kh7btl4r>Previous Company</p>
+                        <ul data-astro-cid-kh7btl4r>
+                            <li data-astro-cid-kh7btl4r>Key responsibility or achievement</li>
+                            <li data-astro-cid-kh7btl4r>Key responsibility or achievement</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="about-section" data-astro-cid-kh7btl4r>
+                    <h2 data-astro-cid-kh7btl4r>Skills & Technologies</h2>
+                    <div class="skills-grid" data-astro-cid-kh7btl4r>
+                        <div class="skill-category" data-astro-cid-kh7btl4r>
+                            <h3 data-astro-cid-kh7btl4r>Programming Languages</h3>
+                            <div class="skill-tags" data-astro-cid-kh7btl4r> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>JavaScript</span> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>TypeScript</span> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>Python</span> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>Java</span> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>C++</span> </div>
+                        </div>
+                        <div class="skill-category" data-astro-cid-kh7btl4r>
+                            <h3 data-astro-cid-kh7btl4r>Web Development</h3>
+                            <div class="skill-tags" data-astro-cid-kh7btl4r> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>React</span> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>Node.js</span> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>Astro</span> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>HTML/CSS</span> </div>
+                        </div>
+                        <div class="skill-category" data-astro-cid-kh7btl4r>
+                            <h3 data-astro-cid-kh7btl4r>Databases</h3>
+                            <div class="skill-tags" data-astro-cid-kh7btl4r> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>PostgreSQL</span> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>MongoDB</span> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>MySQL</span> </div>
+                        </div>
+                        <div class="skill-category" data-astro-cid-kh7btl4r>
+                            <h3 data-astro-cid-kh7btl4r>Tools & Platforms</h3>
+                            <div class="skill-tags" data-astro-cid-kh7btl4r> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>Git</span> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>Docker</span> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>Linux</span> <span class="skill-tag"
+                                    data-astro-cid-kh7btl4r>AWS</span> </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about-section" data-astro-cid-kh7btl4r>
+                    <h2 data-astro-cid-kh7btl4r>Contact</h2>
+                    <div class="contact-info" data-astro-cid-kh7btl4r>
+                        <p data-astro-cid-kh7btl4r>Feel free to reach out to discuss opportunities or collaborations.
+                        </p>
+                        <div class="contact-links" data-astro-cid-kh7btl4r> <a href="mailto:your.email@example.com"
+                                class="contact-link" data-astro-cid-kh7btl4r>Email</a> <a
+                                href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link"
+                                data-astro-cid-kh7btl4r>LinkedIn</a> <a href="https://github.com/yourusername"
+                                target="_blank" class="contact-link" data-astro-cid-kh7btl4r>GitHub</a> </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer data-astro-cid-ouamjn2i>
+        <div class="container" data-astro-cid-ouamjn2i>
+            <p data-astro-cid-ouamjn2i>&copy; 2025 Computer Engineer. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

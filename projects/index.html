@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" data-astro-cid-ouamjn2i>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Computer Engineer - Portfolio &#38; Blog">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content="Astro v5.14.8">
+    <title>Projects - Computer Engineer Portfolio</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-white: #ffffff;
+            --bg-gray: #f9fafb;
+            --border: #e5e7eb;
+            --spacing-unit: 8px
+        }
+
+        [data-astro-cid-ouamjn2i] {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary)
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-white)
+        }
+
+        .container[data-astro-cid-ouamjn2i] {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 calc(var(--spacing-unit) * 3)
+        }
+
+        .navbar[data-astro-cid-ouamjn2i] {
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px #0000000d
+        }
+
+        .navbar[data-astro-cid-ouamjn2i] .container[data-astro-cid-ouamjn2i] {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: calc(var(--spacing-unit) * 2);
+            padding-bottom: calc(var(--spacing-unit) * 2)
+        }
+
+        .logo[data-astro-cid-ouamjn2i] {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            transition: color .2s
+        }
+
+        .logo[data-astro-cid-ouamjn2i]:hover {
+            color: var(--primary-dark)
+        }
+
+        .nav-links[data-astro-cid-ouamjn2i] {
+            display: flex;
+            list-style: none;
+            gap: calc(var(--spacing-unit) * 4)
+        }
+
+        .nav-links[data-astro-cid-ouamjn2i] a[data-astro-cid-ouamjn2i] {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color .2s;
+            position: relative
+        }
+
+        .nav-links[data-astro-cid-ouamjn2i] a[data-astro-cid-ouamjn2i]:hover,
+        .nav-links[data-astro-cid-ouamjn2i] a[data-astro-cid-ouamjn2i].active {
+            color: var(--primary)
+        }
+
+        .nav-links[data-astro-cid-ouamjn2i] a[data-astro-cid-ouamjn2i].active:after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary)
+        }
+
+        main[data-astro-cid-ouamjn2i] {
+            flex: 1;
+            padding: calc(var(--spacing-unit) * 6) 0
+        }
+
+        footer[data-astro-cid-ouamjn2i] {
+            background: var(--bg-gray);
+            border-top: 1px solid var(--border);
+            padding: calc(var(--spacing-unit) * 4) 0;
+            margin-top: calc(var(--spacing-unit) * 8)
+        }
+
+        footer[data-astro-cid-ouamjn2i] p[data-astro-cid-ouamjn2i] {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: .9rem
+        }
+
+        @media(max-width:768px) {
+            .navbar[data-astro-cid-ouamjn2i] .container[data-astro-cid-ouamjn2i] {
+                flex-direction: column;
+                gap: calc(var(--spacing-unit) * 2)
+            }
+
+            .nav-links[data-astro-cid-ouamjn2i] {
+                gap: calc(var(--spacing-unit) * 3);
+                font-size: .9rem
+            }
+
+            main[data-astro-cid-ouamjn2i] {
+                padding: calc(var(--spacing-unit) * 4) 0
+            }
+        }
+
+        .projects-container[data-astro-cid-aid3sr62] {
+            min-height: 60vh
+        }
+
+        .projects-header[data-astro-cid-aid3sr62] {
+            text-align: center;
+            margin-bottom: calc(var(--spacing-unit) * 8)
+        }
+
+        .projects-header[data-astro-cid-aid3sr62] h1[data-astro-cid-aid3sr62] {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: calc(var(--spacing-unit) * 2)
+        }
+
+        .subtitle[data-astro-cid-aid3sr62] {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto
+        }
+
+        .projects-grid[data-astro-cid-aid3sr62] {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: calc(var(--spacing-unit) * 4);
+            margin-bottom: calc(var(--spacing-unit) * 10)
+        }
+
+        .project-card[data-astro-cid-aid3sr62] {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: all .3s;
+            display: flex;
+            flex-direction: column
+        }
+
+        .project-card[data-astro-cid-aid3sr62]:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px #0000001a
+        }
+
+        .project-image[data-astro-cid-aid3sr62] {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background: var(--bg-gray)
+        }
+
+        .project-image[data-astro-cid-aid3sr62] img[data-astro-cid-aid3sr62] {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .3s
+        }
+
+        .project-card[data-astro-cid-aid3sr62]:hover .project-image[data-astro-cid-aid3sr62] img[data-astro-cid-aid3sr62] {
+            transform: scale(1.05)
+        }
+
+        .project-content[data-astro-cid-aid3sr62] {
+            padding: calc(var(--spacing-unit) * 3);
+            flex: 1;
+            display: flex;
+            flex-direction: column
+        }
+
+        .project-content[data-astro-cid-aid3sr62] h2[data-astro-cid-aid3sr62] {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: calc(var(--spacing-unit) * 2)
+        }
+
+        .project-description[data-astro-cid-aid3sr62] {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: calc(var(--spacing-unit) * 3);
+            flex: 1
+        }
+
+        .technologies[data-astro-cid-aid3sr62] {
+            display: flex;
+            flex-wrap: wrap;
+            gap: calc(var(--spacing-unit) * 1.5);
+            margin-bottom: calc(var(--spacing-unit) * 3)
+        }
+
+        .tech-tag[data-astro-cid-aid3sr62] {
+            background: var(--bg-gray);
+            color: var(--text-primary);
+            padding: calc(var(--spacing-unit) * .75) calc(var(--spacing-unit) * 1.5);
+            border-radius: 4px;
+            font-size: .85rem;
+            font-weight: 500;
+            border: 1px solid var(--border)
+        }
+
+        .project-links[data-astro-cid-aid3sr62] {
+            display: flex;
+            gap: calc(var(--spacing-unit) * 2)
+        }
+
+        .project-link[data-astro-cid-aid3sr62] {
+            padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 3);
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all .2s;
+            font-size: .9rem;
+            text-align: center;
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary)
+        }
+
+        .project-link[data-astro-cid-aid3sr62]:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: translateY(-2px)
+        }
+
+        .project-link[data-astro-cid-aid3sr62].demo {
+            background: var(--primary);
+            color: #fff
+        }
+
+        .project-link[data-astro-cid-aid3sr62].demo:hover {
+            background: var(--primary-dark)
+        }
+
+        .cta-section[data-astro-cid-aid3sr62] {
+            text-align: center;
+            padding: calc(var(--spacing-unit) * 8) 0;
+            background: var(--bg-gray);
+            border-radius: 8px;
+            margin-top: calc(var(--spacing-unit) * 6)
+        }
+
+        .cta-section[data-astro-cid-aid3sr62] h2[data-astro-cid-aid3sr62] {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: calc(var(--spacing-unit) * 2)
+        }
+
+        .cta-section[data-astro-cid-aid3sr62] p[data-astro-cid-aid3sr62] {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: calc(var(--spacing-unit) * 4)
+        }
+
+        .btn[data-astro-cid-aid3sr62] {
+            padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4);
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all .2s;
+            display: inline-block
+        }
+
+        .btn-primary[data-astro-cid-aid3sr62] {
+            background: var(--primary);
+            color: #fff
+        }
+
+        .btn-primary[data-astro-cid-aid3sr62]:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px #2563eb4d
+        }
+
+        @media(max-width:768px) {
+            .projects-header[data-astro-cid-aid3sr62] h1[data-astro-cid-aid3sr62] {
+                font-size: 2rem
+            }
+
+            .subtitle[data-astro-cid-aid3sr62] {
+                font-size: 1.125rem
+            }
+
+            .projects-grid[data-astro-cid-aid3sr62] {
+                grid-template-columns: 1fr
+            }
+
+            .cta-section[data-astro-cid-aid3sr62] h2[data-astro-cid-aid3sr62] {
+                font-size: 1.5rem
+            }
+        }
+    </style>
+</head>
+
+<body data-astro-cid-ouamjn2i>
+    <nav class="navbar" data-astro-cid-ouamjn2i>
+        <div class="container" data-astro-cid-ouamjn2i> <a href="/" class="logo" data-astro-cid-ouamjn2i>Portfolio</a>
+            <ul class="nav-links" data-astro-cid-ouamjn2i>
+                <li data-astro-cid-ouamjn2i><a href="/" class data-astro-cid-ouamjn2i>Home</a></li>
+                <li data-astro-cid-ouamjn2i><a href="/about" class data-astro-cid-ouamjn2i>About</a></li>
+                <li data-astro-cid-ouamjn2i><a href="/projects" class data-astro-cid-ouamjn2i>Projects</a></li>
+                <li data-astro-cid-ouamjn2i><a href="/blog" class data-astro-cid-ouamjn2i>Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main data-astro-cid-ouamjn2i>
+        <div class="projects-container" data-astro-cid-aid3sr62>
+            <div class="container" data-astro-cid-aid3sr62>
+                <div class="projects-header" data-astro-cid-aid3sr62>
+                    <h1 data-astro-cid-aid3sr62>My Projects</h1>
+                    <p class="subtitle" data-astro-cid-aid3sr62>Explore my portfolio of technical projects and
+                        contributions</p>
+                </div>
+                <div class="projects-grid" data-astro-cid-aid3sr62>
+                    <article class="project-card" data-astro-cid-aid3sr62>
+                        <div class="project-image" data-astro-cid-aid3sr62> <img
+                                src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="Project Title 1" data-astro-cid-aid3sr62> </div>
+                        <div class="project-content" data-astro-cid-aid3sr62>
+                            <h2 data-astro-cid-aid3sr62>Project Title 1</h2>
+                            <p class="project-description" data-astro-cid-aid3sr62>A comprehensive description of your
+                                project. Explain the problem it solves, technologies used, and your role in the project.
+                            </p>
+                            <div class="technologies" data-astro-cid-aid3sr62> <span class="tech-tag"
+                                    data-astro-cid-aid3sr62>React</span><span class="tech-tag"
+                                    data-astro-cid-aid3sr62>Node.js</span><span class="tech-tag"
+                                    data-astro-cid-aid3sr62>PostgreSQL</span> </div>
+                            <div class="project-links" data-astro-cid-aid3sr62> <a
+                                    href="https://github.com/yourusername/project1" target="_blank"
+                                    rel="noopener noreferrer" class="project-link" data-astro-cid-aid3sr62>
+                                    View Code
+                                </a> <a href="https://project1-demo.com" target="_blank" rel="noopener noreferrer"
+                                    class="project-link demo" data-astro-cid-aid3sr62>
+                                    Live Demo
+                                </a> </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-astro-cid-aid3sr62>
+                        <div class="project-image" data-astro-cid-aid3sr62> <img
+                                src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="Project Title 2" data-astro-cid-aid3sr62> </div>
+                        <div class="project-content" data-astro-cid-aid3sr62>
+                            <h2 data-astro-cid-aid3sr62>Project Title 2</h2>
+                            <p class="project-description" data-astro-cid-aid3sr62>Another exciting project showcasing
+                                your skills in different areas. Highlight key features and achievements.</p>
+                            <div class="technologies" data-astro-cid-aid3sr62> <span class="tech-tag"
+                                    data-astro-cid-aid3sr62>Python</span><span class="tech-tag"
+                                    data-astro-cid-aid3sr62>Django</span><span class="tech-tag"
+                                    data-astro-cid-aid3sr62>Machine Learning</span> </div>
+                            <div class="project-links" data-astro-cid-aid3sr62> <a
+                                    href="https://github.com/yourusername/project2" target="_blank"
+                                    rel="noopener noreferrer" class="project-link" data-astro-cid-aid3sr62>
+                                    View Code
+                                </a> </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-astro-cid-aid3sr62>
+                        <div class="project-image" data-astro-cid-aid3sr62> <img
+                                src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="Project Title 3" data-astro-cid-aid3sr62> </div>
+                        <div class="project-content" data-astro-cid-aid3sr62>
+                            <h2 data-astro-cid-aid3sr62>Project Title 3</h2>
+                            <p class="project-description" data-astro-cid-aid3sr62>A challenging project that
+                                demonstrates your problem-solving abilities and technical expertise.</p>
+                            <div class="technologies" data-astro-cid-aid3sr62> <span class="tech-tag"
+                                    data-astro-cid-aid3sr62>TypeScript</span><span class="tech-tag"
+                                    data-astro-cid-aid3sr62>Astro</span><span class="tech-tag"
+                                    data-astro-cid-aid3sr62>Tailwind</span> </div>
+                            <div class="project-links" data-astro-cid-aid3sr62> <a
+                                    href="https://github.com/yourusername/project3" target="_blank"
+                                    rel="noopener noreferrer" class="project-link" data-astro-cid-aid3sr62>
+                                    View Code
+                                </a> <a href="https://project3-demo.com" target="_blank" rel="noopener noreferrer"
+                                    class="project-link demo" data-astro-cid-aid3sr62>
+                                    Live Demo
+                                </a> </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-astro-cid-aid3sr62>
+                        <div class="project-image" data-astro-cid-aid3sr62> <img
+                                src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="Project Title 4" data-astro-cid-aid3sr62> </div>
+                        <div class="project-content" data-astro-cid-aid3sr62>
+                            <h2 data-astro-cid-aid3sr62>Project Title 4</h2>
+                            <p class="project-description" data-astro-cid-aid3sr62>An innovative solution to a
+                                real-world problem, showcasing full-stack development skills.</p>
+                            <div class="technologies" data-astro-cid-aid3sr62> <span class="tech-tag"
+                                    data-astro-cid-aid3sr62>Vue.js</span><span class="tech-tag"
+                                    data-astro-cid-aid3sr62>Express</span><span class="tech-tag"
+                                    data-astro-cid-aid3sr62>MongoDB</span> </div>
+                            <div class="project-links" data-astro-cid-aid3sr62> <a
+                                    href="https://github.com/yourusername/project4" target="_blank"
+                                    rel="noopener noreferrer" class="project-link" data-astro-cid-aid3sr62>
+                                    View Code
+                                </a> <a href="https://project4-demo.com" target="_blank" rel="noopener noreferrer"
+                                    class="project-link demo" data-astro-cid-aid3sr62>
+                                    Live Demo
+                                </a> </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="cta-section" data-astro-cid-aid3sr62>
+                    <h2 data-astro-cid-aid3sr62>Interested in collaborating?</h2>
+                    <p data-astro-cid-aid3sr62>I'm always open to discussing new projects and opportunities.</p> <a
+                        href="/about" class="btn btn-primary" data-astro-cid-aid3sr62>Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer data-astro-cid-ouamjn2i>
+        <div class="container" data-astro-cid-ouamjn2i>
+            <p data-astro-cid-ouamjn2i>&copy; 2025 Computer Engineer. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
