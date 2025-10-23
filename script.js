@@ -18,7 +18,7 @@ const projects = [
     technologies: ["Python", "Unity", "OpenCV"],
     link: "https://github.com/zuleyhasen/Hand-Rehabilitation-Game",
     demo: "/images-videos/hand-rehab-demo.mp4",
-    image: "https://private-user-images.githubusercontent.com/111359587/351712308-f7acd059-b06b-47ff-b384-e68b4c92aa70.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjEyNDk5MzQsIm5iZiI6MTc2MTI0OTYzNCwicGF0aCI6Ii8xMTEzNTk1ODcvMzUxNzEyMzA4LWY3YWNkMDU5LWIwNmItNDdmZi1iMzg0LWU2OGI0YzkyYWE3MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAyM1QyMDAwMzRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNjM4MDc5NjNkNzYwZDAzMTdiN2YwOTkyZDg3YWQyOTM2OTAwMjg0NDU0ZDZjZGY1MDVhYzkwNWUyYmRhZDRlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ahS2FKXjbvVPdsYgKOlFOMQEcRIlMOCrr3-TPekLluM"
+    image: "/images-videos/game.png"
   },
   {
     id: 2,
