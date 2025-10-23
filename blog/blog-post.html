@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Blog Post</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">Züleyha | Dev</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">Resume</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/blog" class="active">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <div class="post-header">
+          <div class="cover-image" id="cover-container"></div>
+          <div class="post-meta">
+            <time id="post-date"></time>
+            <div class="tags" id="post-tags"></div>
+          </div>
+          <h1 id="post-title"></h1>
+          <p class="excerpt" id="post-excerpt"></p>
+        </div>
+        <div class="post-content" id="post-content"></div>
+        <div class="post-footer">
+          <a href="/blog" class="back-link">← Back to Blog</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Computer Engineer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/blog/blog-post.js"></script>
+</body>
+</html>

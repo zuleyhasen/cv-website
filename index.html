@@ -2,82 +2,92 @@
 <html lang="tr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Home - Computer Engineer Portfolio"</title>
-    <link rel="stylesheet" href="style.css" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="container">
-            <a href="/" class="logo">Züleyha Şen</a>
+        <div class="container"> <a href="/" class="logo">Züleyha | Dev</a>
             <ul class="nav-links">
-                <li><a href="/" class={currentPath==='/' ? 'active' : '' }>Home</a></li>
-                <li><a href="/about" class={currentPath==='/about' ? 'active' : '' }>Resume</a></li>
-                <li><a href="/projects" class={currentPath==='/projects' ? 'active' : '' }>Projects</a></li>
-                <li><a href="/blog" class={currentPath.startsWith('/blog') ? 'active' : '' }>Blog</a></li>
+                <li><a href="/" class>Home</a></li>
+                <li><a href="/about" class>About</a></li>
+                <li><a href="/projects" class>Projects</a></li>
+                <li><a href="/blog" class>Blog</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
+
     </main>
-    <div class="hero">
-        <div class="container">
+
+    <section class="hero-section">
+        <div class="hero-content">
             <img src="/images/me.jpg" alt="Züleyha Şen" class="profile-img" />
-            <div class="wrapper">
-                <svg>
-                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                        Züleyha Şen
-                    </text>
-                </svg>
-            </div>
-            <p class="subtitle">Junior Computer Engineer</p>
-            <p class="description">
-                I am a Computer Engineering graduate highly motivated to continuously learn and improve in
-                technology.
+            <h1 class="hero-title">Züleyha Şen</h1>
+            <p class="hero-subtitle">Junior Computer Engineer</p>
+            <p class="hero-description">
+                I am a Computer Engineering graduate highly motivated to continuously learn and improve in technology.
                 I focus on delivering value with a solution-oriented mindset, structured work style, and analytical
                 approach.
-                <br><br>
-                I enjoy collaborating in teams, sharing knowledge, and enhancing efficiency in business processes.
-                My goal is to contribute to growth in every environment I work in.
             </p>
             <div class="cta-buttons">
-                <a href="/projects" class="btn btn-primary">View Projects</a>
+                <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="/about" class="btn btn-secondary">Resume</a>
             </div>
         </div>
-    </div>
+        <div class="wave-container">
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#2a2a2a" fill-opacity="1"
+                    d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
 
-    <section class="features">
+    <section id="projects" class="features">
         <div class="container">
+            <h2 class="section-title">What I Do</h2>
             <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="icon">💻</div>
+
+                <a href="about/index.html" class="feature-card">
+                    <div class="feature-icon">💻</div>
                     <h3>Resume</h3>
                     <p>View my resume to learn more about my technical background and experience.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🚀</div>
+                </a>
+
+                <a href="projects/index.html" class="feature-card">
+                    <div class="feature-icon">🚀</div>
                     <h3>Projects</h3>
                     <p>Explore my portfolio of completed and ongoing technical projects</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">✍️</div>
+                </a>
+
+                <a href="blog/index.html" class="feature-card">
+                    <div class="feature-icon">✍️</div>
                     <h3>Blog</h3>
                     <p>Sharing insights, tutorials, and thoughts on software engineering</p>
-                </div>
+                </a>
+
             </div>
         </div>
     </section>
+
 
     <footer>
         <div class="container">
             <p>&copy; {new Date().getFullYear()} Computer Engineer. All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

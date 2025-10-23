@@ -7,11 +7,12 @@
     <title>Projects Slider</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
     <link href="../style.css" rel="stylesheet">
+    <script src="../script.js" defer></script>
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="container"> <a href="/" class="logo">Portfolio</a>
+        <div class="container"> <a href="/" class="logo">Züleyha | Dev</a>
             <ul class="nav-links">
                 <li><a href="/" class>Home</a></li>
                 <li><a href="/about" class>About</a></li>
@@ -21,62 +22,27 @@
         </div>
     </nav>
 
-    <div class="slider">
-        <div class="items-group">
-            <div class="item active">
-                <div class="block">
-                    <span class="circleLight"></span>
-                    <h2>Hi</h2>
-                    <p>I'm card 1</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="block">
-                    <span class="circleLight"></span>
-                    <h2>Hello</h2>
-                    <p>I'm card 2</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="block">
-                    <span class="circleLight"></span>
-                    <h2>Hey</h2>
-                    <p>I'm card 3</p>
-                </div>
-            </div>
-        </div>
-        <div class="navigations">
-            <ul class="dots">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
+  <div class="projects-container">
+    <div class="container">
+      <div class="projects-header">
+        <h1>My Projects</h1>
+        <p class="subtitle">Explore my portfolio of technical projects and contributions</p>
+      </div>
+
+      <div id="projects-grid" class="projects-grid">
+        <!-- JS ile projeler buraya render edilecek -->
+      </div>
+
+      <div class="cta-section">
+        <h2>Interested in collaborating?</h2>
+        <p>I'm always open to discussing new projects and opportunities.</p>
+        <a href="/about.html" class="btn btn-primary">Get in Touch</a>
+      </div>
     </div>
+  </div>
 
-    <script>
-        const items = document.querySelectorAll('.item');
-        const dots = document.querySelectorAll('.dots li');
-        let current = 0;
+  <script type="module" src="../script.js"></script>
 
-        function showSlide(index) {
-            items.forEach((item, i) => {
-                item.classList.toggle('active', i === index);
-                dots[i].classList.toggle('active', i === index);
-            });
-            current = index;
-        }
-
-        dots.forEach((dot, i) => {
-            dot.addEventListener('click', () => showSlide(i));
-        });
-
-        // Auto slide every 5 seconds
-        setInterval(() => {
-            let next = (current + 1) % items.length;
-            showSlide(next);
-        }, 5000);
-    </script>
 </body>
 
 </html>
