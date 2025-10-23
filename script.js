@@ -11,57 +11,56 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 const projects = [
-    {
-        id: 1,
-        title: "Project Title 1",
-        description: "A comprehensive description of your project. Explain the problem it solves, technologies used, and your role in the project.",
-        technologies: ["React", "Node.js", "PostgreSQL"],
-        link: "https://github.com/yourusername/project1",
-        demo: "https://project1-demo.com",
-        image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-        id: 2,
-        title: "Project Title 2",
-        description: "Another exciting project showcasing your skills in different areas. Highlight key features and achievements.",
-        technologies: ["Python", "Django", "Machine Learning"],
-        link: "https://github.com/yourusername/project2",
-        demo: null,
-        image: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-        id: 3,
-        title: "Project Title 3",
-        description: "A challenging project that demonstrates your problem-solving abilities and technical expertise.",
-        technologies: ["TypeScript", "Astro", "Tailwind"],
-        link: "https://github.com/yourusername/project3",
-        demo: "https://project3-demo.com",
-        image: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-        id: 4,
-        title: "Project Title 4",
-        description: "An innovative solution to a real-world problem, showcasing full-stack development skills.",
-        technologies: ["Vue.js", "Express", "MongoDB"],
-        link: "https://github.com/yourusername/project4",
-        demo: "https://project4-demo.com",
-        image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800"
-    }
+  {
+    id: 1,
+    title: "Hand Rehabilitation Game (Graduation Project)",
+    description: " Developed an interactive rehabilitation game controlled via hand gestures using a camera-based input system using OpenCV Published the research findings in the International Journal of Digital Waste Engineering (IJDWE) with the title: Web Camera-Based Gamified Rehabilitation System for Improving Fine Motor Skills: Pilot Study",
+    technologies: ["Python", "Unity", "OpenCV"],
+    link: "https://github.com/zuleyhasen/Hand-Rehabilitation-Game",
+    demo: "/images-videos/hand-rehab-demo.mp4",
+    image: "https://private-user-images.githubusercontent.com/111359587/351712308-f7acd059-b06b-47ff-b384-e68b4c92aa70.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjEyNDk5MzQsIm5iZiI6MTc2MTI0OTYzNCwicGF0aCI6Ii8xMTEzNTk1ODcvMzUxNzEyMzA4LWY3YWNkMDU5LWIwNmItNDdmZi1iMzg0LWU2OGI0YzkyYWE3MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAyM1QyMDAwMzRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNjM4MDc5NjNkNzYwZDAzMTdiN2YwOTkyZDg3YWQyOTM2OTAwMjg0NDU0ZDZjZGY1MDVhYzkwNWUyYmRhZDRlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ahS2FKXjbvVPdsYgKOlFOMQEcRIlMOCrr3-TPekLluM"
+  },
+  {
+    id: 2,
+    title: "Library Automation System (Internship Project)",
+    description: "Developed a library management system during an internship using the MVC architecture and .NET technologies, gaining hands-on experience in back-end development and system management.",
+    technologies: [".NET", "MVC", "SQL Server Management"],
+    link: null,
+    demo: null,
+    image: "/images-videos/gnc-library.png"
+  },
+  {
+    id: 3,
+    title: "ERP System Design (Summer Project)",
+    description: "Collaborated with a team to design and develop an ERP application for Senna Design, under the guidance of a faculty mentor.",
+    technologies: ["ReactNative", "PHP", "Android Studio"],
+    link: null,
+    demo: "/images-videos/sennaERP.mp4",
+    image: "/images-videos/senna.png"
+  },
+  {
+    id: 4,
+    title: "Pizza Order System",
+    description: "Designed a Pizza Order System using Python as part of Akbank Python Bootcamp, implementing object-oriented principles and decorators to handle different pizza bases and toppings, allowing dynamic calculation of order cost and description.",
+    technologies: ["Python"],
+    link: "https://github.com/zuleyhasen/PizzaOrderSystem",
+    demo: null,
+    image: "/images-videos/pizza.png"
+  }
 ];
 
 
 const grid = document.getElementById('projects-grid');
 
 projects.forEach(project => {
-    const article = document.createElement('article');
-    article.classList.add('project-card');
+  const article = document.createElement('article');
+  article.classList.add('project-card');
 
-    article.innerHTML = `
+  article.innerHTML = `
     <div class="project-image-wrapper">
       <img src="${project.image}" alt="${project.title}" class="project-image" />
       <div class="project-overlay">
         <div class="overlay-content">
-          <h3>${project.title}</h3>
           <p class="overlay-description">${project.description}</p>
         </div>
       </div>
@@ -72,13 +71,13 @@ projects.forEach(project => {
         ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
       </div>
       <div class="project-links">
-        <a href="${project.link}" target="_blank" class="project-link">View Code</a>
-        ${project.demo ? `<a href="${project.demo}" target="_blank" class="project-link demo">Live Demo</a>` : ''}
+        ${project.link ? `<a href="${project.link}" target="_blank" class="project-link">View Code</a>` : ''}
+        ${project.demo ? `<a href="${project.demo}" target="_blank" class="project-link demo">Demo Video</a>` : ''}
       </div>
     </div>
   `;
 
-    grid.appendChild(article);
+  grid.appendChild(article);
 });
 
 
