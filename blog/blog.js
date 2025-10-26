@@ -35,7 +35,7 @@ async function fetchBlogPosts() {
                         <div class="blog-meta">
                             <time datetime="${post.published_at || ""}">${formatDate(post.published_at)}</time>
                         </div>
-                        <h2><a href="/blog/${post.slug}">${post.title}</a></h2>
+                        <h2><a href="/blog/blog-post.html?slug=${post.slug}">${post.title}</a></h2>
                         <p class="excerpt">${post.excerpt}</p>
                         ${post.tags && post.tags.length > 0 ? `<div class="tags">${post.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}</div>` : ""}
                         <a href="/blog/blog-post.html?slug=${post.slug}" class="read-more">Read More →</a>
