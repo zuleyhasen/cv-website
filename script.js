@@ -34,7 +34,7 @@ const projects = [
     title: "ERP System Design (Summer Project)",
     description: "Collaborated with a team to design and develop an ERP application for Senna Design, under the guidance of a faculty mentor.",
     technologies: ["ReactNative", "PHP", "Android Studio"],
-    link: null,
+    link: "https://github.com/zuleyhasen/ReactNative-ERP-Mobile-App",
     demo: "/images-videos/sennaERP.mp4",
     image: "/images-videos/senna.png"
   },
@@ -46,6 +46,24 @@ const projects = [
     link: "https://github.com/zuleyhasen/PizzaOrderSystem",
     demo: null,
     image: "/images-videos/pizza.png"
+  },
+  {
+    id: 5,
+    title: "Strategic Move AI Game",
+    description: "This project is an AI-powered strategy board game developed in C language.  The player and the computer compete on a 7x7 grid, each trying to outmaneuver the other by strategically moving their pieces.  The computer’s decisions are guided by the Minimax algorithm with Alpha-Beta Pruning and a custom heuristic evaluation function.",
+    technologies: ["Searching algorithm", "C"],
+    link: "https://github.com/zuleyhasen/Strategic-Move-AI-Game",
+    demo: null,
+    image: "/images-videos/searching.png"
+  },
+  {
+    id: 6,
+    title: "Python-to-C Translator (Lex & Yacc Project)",
+    description: "This project implements a simple compiler that translates a Python-like indentation-based language into C code using Lex and Yacc.",
+    technologies: ["Lex", "Yacc"],
+    link: "https://github.com/zuleyhasen/python_to_c_compiler",
+    demo: null,
+    image: "/images-videos/Generated.png"
   }
 ];
 
